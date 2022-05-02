@@ -1,0 +1,90 @@
+@import "./HomeSec4.scss";
+@import "./HeroPage.scss";
+
+.Hs5whole{
+    // border: 1px solid red;
+    width: 400px;
+    margin: auto;
+    display: block;
+}
+
+.Hs5head{
+    // border: 1px solid rgb(255, 0, 140);
+    @extend .Hs4head;
+    color: black;
+}
+
+.Hs5main{
+    // border: 1px solid yellow;
+    width: 100%;
+    display: block;
+    margin: auto;
+
+    .Hs5part{
+        // border: 1px solid blue;
+        display: flex;
+        margin-bottom: 40px;
+        
+
+        .Hs5img{
+            // border: 1px solid yellowgreen;
+            width: fit-content;
+
+            img{
+                // border: 1px solid blue;
+                display: block;
+                margin: auto;
+               
+
+            }
+
+        }
+
+        p{
+            //  border:1px solid red;
+            font-size: $siteFont;
+            color:$smallwordcolor;
+            width: fit-content;
+            padding: 0px 0 0 10px;
+            
+        }
+    }
+}
+
+
+.Hs5btn{
+    display: block;
+    margin: 10px auto 80px;
+    width: 300px;
+    height: 70px;
+    background-color: $secondmaincolor;
+    border-radius: 5px;
+    cursor: pointer;
+
+    p{
+        text-align: center;
+        color:white;
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 19px;
+        
+        // border: 1px solid green;
+        
+    }
+}
+
+
+/* Medium devices (landscape tablets, 480px and down) ************************************/
+@media only screen and (max-width: 480px) {
+
+    .Hs5whole{
+        
+        width: 100% !important;
+      
+    }
+
+    .Hs5btn{
+        width: 95% !important;
+    }
+    
+}

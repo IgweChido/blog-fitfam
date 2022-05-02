@@ -1,0 +1,196 @@
+@import "./HomeSec2.scss";
+
+.Hs3main{
+    border:1px solid green;
+    display: flex;
+    height: 600px;
+    position: relative;
+    width:100%;
+   
+    
+   
+    margin: auto;
+
+    .Hs3imgdiv{
+        border:1px solid blue;
+        height: 420px;
+        position: relative;
+        top:50%;
+        margin-top:-210px;
+        width:985px;
+       
+        
+        
+
+            .Hs3img1{
+                border:1px solid red;
+                position: absolute;
+                width: 26.8%;
+                height: 45.1%;
+                left:2.5%;
+                background-image: url('../images/Sec3img1.png');
+                border-radius: 5px;
+                background-position:  center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+               
+           
+            }
+            .Hs3img2{
+                
+                border:1px solid red;
+                position: absolute;
+                width: 20.95%;
+                height: 45.1%;
+                top:7.62%;
+                left:30.9%;
+                background-image: url('../images/Sec3img2.png');
+                border-radius: 5px;
+                background-position:  center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+                
+               
+            
+            }
+        
+
+            .Hs3img3{
+                border:1px solid red;
+                position: absolute;
+                width: 29.2%;
+                height: 30%;
+                top:49.9%;
+                background-image: url('../images/Sec3img3.png');
+                border-radius: 5px;
+                background-position:  center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+               
+                
+
+                 
+            } 
+            
+            .Hs3img4{
+                border:1px solid red;
+                position: absolute;
+                width: 29.8%;
+                height: 42.5%;
+                top:56.9%;
+                left:30.9%;
+                background-image: url('../images/Sec3img4.png');
+                border-radius: 5px;
+                background-position:  center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+                
+                
+                
+               
+            }
+
+        
+        
+       
+        
+    }
+
+    .Hs3wordiv{
+
+        border:1px solid yellow;
+        position:absolute;
+        height: fit-content;
+        left: 71%;
+        
+        top:50%;
+        margin-top:-36px;
+        
+        
+
+        .Hs3bigp{
+            color: $maincolor;
+            font-size: 29px;
+            font-weight: 700;
+            // border: 1px solid green;
+            margin: 0 0 20px 0;
+            width: fit-content;
+        }
+
+        p{
+            font-size: $siteFont;
+            color: $smallwordcolor;
+            //  border: 1px solid blue;
+             width:280px;
+             
+        }
+       
+    }
+}
+
+
+
+
+/* Medium devices (landscape tablets, 1100px and down) ************************************/
+@media only screen and (max-width: 1100px) {
+
+    .Hs3main{
+        width: auto!important;
+    }
+
+    .Hs3wordiv{
+
+        
+       margin-left: -50px;
+        
+    }
+    
+    
+}
+
+
+/* Medium devices (landscape tablets, 1100px and down) ************************************/
+@media only screen and (max-width: 1100px) {
+    .Hs3wordiv{
+
+        
+        margin-left: -60px;
+         
+     }
+}
+
+
+/* Medium devices (landscape tablets, 850px and down) ************************************/
+@media only screen and (max-width: 850px) {
+    .Hs3main{
+        display: block !important;
+    }
+
+    .Hs3imgdiv{
+        top:auto !important;
+        margin: auto !important;
+        width: auto !important;
+    }
+
+    .Hs3wordiv{
+        top:auto !important;
+        margin: auto !important;
+        width: auto !important;
+        left: auto !important;
+        position: relative !important;
+    }
+
+    .Hs3bigp{
+        
+    }
+
+    p{
+       
+         width:100% !important;
+         
+    }
+}

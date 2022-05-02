@@ -1,0 +1,95 @@
+@import "./Header.scss";
+$phonefontsize:16px;
+.footer{
+    background-color: $maincolor;
+    height: 60px;
+    color: white;
+}
+
+.footmain{
+    // border: 1px solid yellow;
+    width: 500px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.socialink{
+    top:15px;
+    position: absolute;
+    // border: 1px solid green;
+    display: inline-block;
+
+    div{
+        display: inline-block;
+        margin-right: 25px;
+        cursor: pointer;
+        // border: 1px solid red;
+    }
+}
+
+.copyright{
+    top: 19px;
+    left: 220px;
+    position: absolute;
+    // border: 1px solid blue;
+    display: inline-block;
+}
+
+
+/* Medium devices (landscape tablets, 600px and down) ************************************/
+@media only screen and (max-width: 600px) {
+
+    .footer{
+        height: 100px;
+    }
+
+    .footmain{
+        padding-top: 14px;
+        width: 90%;
+    }
+    .socialink{
+        display: block !important;
+        position: relative !important;
+        width: fit-content;
+        margin: auto;
+        top: auto;
+        margin-bottom: 11px ;
+
+        div{
+            margin: 0 12.5px;
+        }
+    }
+
+    .copyright{
+        display: block !important;
+        position: relative !important;
+        width: fit-content;
+        margin: auto;
+        top: auto;
+        left: auto;
+        font-size: $phonefontsize;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 345px and down) ************************************/
+@media only screen and (max-width: 345px) {
+
+
+    .footmain{
+        padding-top: 19px;
+    }
+    .socialink{
+        div{
+            width: 24px;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .copyright{
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,148 @@
+@import '../page2/Blogcomp1.scss';
+
+.bc2backimg{
+    background-image: url('../../images/Heroimage10.png');
+    width: 29.5%;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 30px;
+    height: 440px;
+
+    .bc2dark{
+        position: absolute;
+        bottom: 0;
+        background: rgba(32, 28, 29, 0.5);
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+
+        .bc2words{
+            padding: 15px 0 15px;
+            // border: 1px solid red;
+            width: 95%;
+            margin: auto;
+            display: block;
+    
+            p{
+                 // border:1px solid red;
+                 font-size: $blogcompfontsize;
+                 color:white;
+                 margin-bottom: 20px;
+                
+            }
+    
+            .bc2title{
+                // border: 1px solid yellow;
+                font-weight: 700;
+                color: white;
+                font-size: 18px;
+            }
+        }
+    
+    
+        .bc2pword{
+            // border: 1px solid blue;
+            
+    
+            p{
+                color: white;
+                display: inline-block;
+                // border: 1px solid blue;
+                width: fit-content !important;
+                margin: 0;
+            }
+    
+    
+            .bc2comlikes{
+                //    border: 1px solid green;
+                display: inline-block;
+                margin-left: 20px;
+    
+                .bc2com{
+                        // border: 1px solid green;
+                     display: inline-block;
+                     margin-right:20px;
+    
+                    img{
+                           display: inline-block;
+                        //  border: 1px solid blue;
+                            position: relative;
+                            top:5px;
+                            margin-right: 7px;
+                    }
+                    p{
+                        display: inline-block;
+                        // border: 1px solid blue;
+                    }
+                }
+    
+                .bc2likes{
+                    display: inline-block;
+    
+                    img{
+                        display: inline-block;
+                        //    border: 1px solid blue;
+                            position: relative;
+                            top:5px;
+                            margin-right: 7px;
+                    }
+                    p{
+                        display: inline-block; 
+                    }
+                }
+            }
+        }
+
+    }
+    
+}
+
+
+/* Medium devices (landscape tablets, 950px and down) ************************************/
+@media only screen and (max-width: 950px) {
+    .bc2backimg{
+        width: 32.5% !important;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 860px and down) ************************************/
+@media only screen and (max-width: 860px) {
+    .bc2backimg{
+        width: 46% !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 650px and down) ************************************/
+@media only screen and (max-width: 650px) {
+    .bc2backimg{
+        width: 55% !important;
+        margin: 0 auto 30px !important;
+        display: block !important;
+        min-width: 320px !important;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 360px and down) ************************************/
+@media only screen and (max-width: 360px) {
+    .bc2backimg{
+        width: 100% !important;
+        min-width: 240px !important;
+    }
+
+    .bc2comlikes{
+       
+    
+     margin-left: 10px !important;
+
+     .bc2com{
+            
+          margin-right:10px !important;
+
+        
+ }
+}
+}

@@ -1,0 +1,229 @@
+
+
+$myFont:Helvetica, sans-serif;
+$headFontSize: 16px;
+$headFontWeight: 600;
+$maincolor:#201C1D;
+$secondmaincolor:#3B3436;
+
+
+
+.body{
+     font-family: $myFont;
+}
+
+
+
+.head{
+   
+    font-size: $headFontSize;
+    font-weight: $headFontWeight;
+    color: $maincolor;
+    text-decoration: none;
+    // border: 1px solid black;
+    height: 100px;
+    
+}
+
+.marginp{
+    width: 90%;
+    display: block;
+    margin: auto;
+    max-width: 1200px;
+    // border: 1px solid blue;
+}
+
+.marginpp{
+    width: 90%;
+    display: block;
+    margin: auto;
+    position: relative;
+    // border: 1px solid red;
+}
+.logonavarea{
+    float: left;
+    // border: 1px solid green;
+    position: relative;
+    width: 50%;
+
+    .logodiv{
+        cursor: pointer;
+        top: 17px;
+        // border: 1px solid blue;
+        position:absolute;
+
+        
+        
+    }
+    
+    .divnav{
+        // border: 1px solid pink;
+        left:148px;
+        top:40px;
+        position: absolute;
+       
+        
+    
+        .navs{
+            margin:0 25px 0;
+            color: $maincolor;
+            text-decoration: none;
+    }
+    }
+
+    
+}
+
+.phonebacknav{
+    display: none;
+}
+
+.phonedivnav{
+        display: none;
+    }
+
+.logindiv{
+    position: relative;
+    top:25px;
+    float: right;
+    // border: 1px solid red;
+
+    p{
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .btnhead{
+        cursor: pointer;
+        display: inline-block;
+        margin-left: 20px;
+        border: none;
+        border: 1px solid $maincolor;
+        height: 50px;
+        width: 150px;
+        border-radius: 5px;
+        background-color: white;
+
+    p{
+        margin: 11px auto 0;
+        display: block ;
+        // border: 1px solid yellow;
+        width: fit-content;
+        
+    }
+}
+}
+
+
+
+/* Medium devices (landscape tablets, 1000px and down) ************************************/
+@media only screen and (max-width: 1030px) {
+
+    
+        
+    .divnav{
+        // border: 1px solid brown;
+       left: 128px !important;
+      
+       
+    }       
+        .navs{
+            margin:0 15px 0 !important;
+            color: $maincolor;
+            text-decoration: none;
+            // border: 1px solid seagreen;
+        }
+    
+       
+
+}
+
+
+/* Medium devices (landscape tablets, 850px and down) ************************************/
+@media only screen and (max-width: 850px) {
+
+    .divnav{
+        // border: 1px solid brown;
+       left: 128px !important;
+        display: none;
+       
+    }  
+    
+    .logindiv{
+        display: none;
+    }
+
+    .phonedivnav{
+        // border: 1px solid rgb(229, 255, 0) !important ;
+        display: block !important;
+       
+        right:0;
+        top:35px;
+        
+        position: absolute;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .phonebacknav{
+        position: relative;
+        display: block !important;
+        // border: 1px solid red !important ;
+        float: right;
+        height:70%;
+        width: 15%;
+        margin-top: 13px;
+        background-color: $secondmaincolor;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      
+       
+    }
+}
+
+
+
+/* Medium devices (landscape tablets, 600px and down) ************************************/
+@media only screen and (max-width: 600px) {
+
+    .phonebacknav{
+        width: 17.5%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 460px and down) ************************************/
+@media only screen and (max-width: 460px) {
+
+    .head{
+        height: 70px !important;
+    }
+
+    .logodiv{
+        top:8px !important;
+        width: 52px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .phonedivnav{
+        top:24px !important;
+    }
+    .phonebacknav{
+        width:90px;
+        height: 47px;
+        margin-top: 11px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 300px and down) ************************************/
+@media only screen and (max-width: 300px) {
+
+    .phonebacknav{
+        width: 75px;
+    }
+}

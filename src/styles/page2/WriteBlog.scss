@@ -1,0 +1,212 @@
+@import '../page2/BlogDetails.scss';
+
+.wbmainwrite{
+    // border: 1px solid green;
+    margin: 80px 0px 150px;
+
+    p{
+        // border:1px solid red;
+        font-size: 29px;
+        font-weight: 700;
+        color: $maincolor;
+        margin-bottom: 40px;
+    }
+
+    .wbwritebx{
+        // border:1px solid red;
+        textarea{
+            resize: none;
+            width: 85%;
+            border: 5px solid $maincolor;
+            border-radius: 5px;
+            height: 450px;
+            padding: 40px;
+            font-family: $myFont;
+            font-size: $headFontSize;
+        }
+    }
+
+
+    .wbprmtbtn{
+        // border: 1px solid rgb(128, 0, 111);
+        margin-top: 40px;
+    }
+
+    .wbherobtn{
+        
+        width: 300px;
+        height: 70px;
+        background-color: $secondmaincolor;
+        border-radius: 5px;
+        cursor: pointer;
+        display: inline-block;
+        // border: 1px solid green;
+        position: relative;
+       
+
+        p{
+            text-align: center;
+            color:white;
+            font-size: 20px;
+            font-weight: 600;
+            padding-top: 19px;
+           
+            // border: 1px solid green;
+            
+
+           
+            
+        }
+
+        
+    }
+
+    .wbherobtn2{
+        width: 300px;
+        height: 70px;
+        background-color: $secondmaincolor;
+        border-radius: 5px;
+        cursor: pointer;
+        display: inline-block;
+        // border: 1px solid green;
+        position: relative;
+        margin-right: 30px;
+
+
+        div{
+            height: 70px;
+            // border: 1px solid rgb(126, 128, 0);
+            position: relative;
+            width: 55%;
+            display: block;
+            margin: auto;
+
+            img{
+                // border: 1px solid rgb(126, 128, 0);
+                position: absolute;
+                margin-left: 5px;
+                top: 50%;
+                margin-top: -16px;
+                right: 0px;
+                
+            }
+
+            p{
+               
+                color:white;
+                font-size: 20px;
+                font-weight: 600;
+                padding-top: 19px;
+               
+                // border: 1px solid green;
+                
+            }
+        }
+
+        
+    }
+
+
+}
+
+
+.wbotherblog{
+    border: 1px solid black;
+    margin-bottom: 80px;
+
+    .wbotherblogh{
+        // border:1px solid red;
+        font-size: 29px;
+        font-weight: 700;
+        color: $maincolor;
+        margin-bottom: 40px;
+    }
+
+    .wbcomparea{
+        // border:1px solid red;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+}
+
+/* Medium devices (landscape tablets, 850px and down) ************************************/
+@media only screen and (max-width: 850px) {
+
+
+    .wbmainwrite{
+        
+        p{
+            
+            font-size: 24px !important;
+            
+        }
+    }
+    .wbwritebx{
+        // border:1px solid red;
+        textarea{
+           
+            width: 100% !important;
+            border: 2px solid $maincolor !important;
+            
+        }
+    }
+
+
+    .wbherobtn{
+        
+        width: 100% !important;
+        display: block !important;
+       
+       
+
+        p{
+            
+            font-size: 18px !important;
+          
+            padding-top: 21px !important;
+           
+             
+        }
+
+        
+    }
+
+
+    .wbherobtn2{
+        
+        width: 100% !important;
+        display: block !important;
+        margin-bottom: 40px !important;
+       
+        div{
+            
+            width: 150px !important;
+            
+
+            img{
+                
+            }
+        }
+       
+
+        p{
+            
+            font-size: 18px !important;
+          
+            padding-top: 21px !important;
+           
+           
+        }
+
+        
+    }
+
+    .wbotherblogh{
+        // border:1px solid red;
+        font-size: 24px !important;
+       
+    }
+}
+

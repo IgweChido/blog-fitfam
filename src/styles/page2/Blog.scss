@@ -1,0 +1,290 @@
+@import "../HomeSec5.scss";
+
+
+.hblog{
+    // border: 1px solid green;
+    margin-bottom: 160px;
+
+
+    .hbword{
+        @extend .Hs5head;
+        text-align:left;
+        // border: 1px solid red;
+    }
+
+    .hbp2date{
+        display: none;
+         // border:1px solid red;
+         font-size: $siteFont;
+         color:$smallwordcolor;
+         margin-bottom: 15px;
+    }
+
+    .hbimgw{
+        // border: 1px solid yellow;
+        display: flex;
+        
+       
+        .hbimg{
+            // border: 1px solid red;
+            width: 60%;
+
+             .hb2blogimg2{
+                display: none;
+                width: 100%;
+         }
+            
+
+            img{
+                width: 100%;
+              
+                
+            }
+        }
+
+        .hbwords{
+            
+            // border: 1px solid blue;
+            width: 40%;
+
+            .hbwwidth{
+                margin: 30px 0 0 30px;
+                // border: 1px solid pink;
+                width: 340px;
+                // min-width: 270px;
+                p{
+                    // border:1px solid red;
+                   font-size: $siteFont;
+                   color:$smallwordcolor;
+                   margin-bottom: 25px;
+                  
+                  
+               }
+   
+               .hbtitle{
+                   font-size: 24px;
+                   font-weight: 700;
+                   color: $maincolor;
+               }
+   
+               .hbp2words{
+                //    border: 1px solid yellow;
+                   
+                   p{
+                       color: black;
+                       display: inline-block;
+                       margin: 0;
+                       width: fit-content !important;
+                    //    border: 1px solid blue;
+                   }
+   
+                  .hbcomlikes{
+                    //    border: 1px solid green;
+                       display: inline-block;
+                       margin-left: 20px;
+   
+                       .hbcomments{
+                           display: inline-block;
+                           margin-right:20px;
+   
+                           img{
+                               display: inline-block;
+                            //    border: 1px solid blue;
+                               position: relative;
+                               top:5px;
+                               margin-right: 7px;
+                           }
+   
+                           p{
+                               display: inline-block;
+                           }
+                       }
+   
+                       .hblikes{
+                           display: inline-block;
+   
+                           img{
+                               display: inline-block;
+                            //    border: 1px solid blue;
+                               position: relative;
+                               top:5px;
+                               margin-right: 7px;
+                           }
+   
+                           p{
+                               display: inline-block;
+                           }
+                       }
+                  }
+   
+                   
+               }
+            }
+        }
+    }
+}
+
+
+.bodyblog{
+    
+    // border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+   
+   
+    
+}
+
+
+/* Medium devices (landscape tablets, 1100px and down) ************************************/
+@media only screen and (max-width: 1100px) {
+
+    .hbimg{
+        width: 68% !important;
+    }
+
+    .hbwords{
+        width: 30% !important;
+    }
+
+
+    .hbwwidth{
+       
+        width: 100% !important;
+        // min-width: 270px;
+        margin: 30px 0 0 20px !important;
+        p{
+          margin-bottom: 15px !important;
+          
+          
+       }
+    }
+}
+
+
+
+/* Medium devices (landscape tablets, 980px and down) ************************************/
+@media only screen and (max-width: 980px) {
+    .hbimg{
+        width: 63% !important;
+    }
+
+    .hbwords{
+        width: 35% !important;
+    }
+
+    .hbwwidth{
+       
+       
+        margin: 10px 0 0 20px !important;
+        p{
+          
+          
+          
+       }
+    }
+}
+
+/* Medium devices (landscape tablets, 900px and down) ************************************/
+@media only screen and (max-width: 900px) {
+    .hbimg{
+        width: 63% !important;
+    }
+
+    .hbwords{
+        width: 35% !important;
+    }
+
+    .hbwwidth{  
+        margin: 10px 0 0 10px !important;
+        p{
+          
+       }
+    }
+}
+
+
+/* Medium devices (landscape tablets, 850px and down) ************************************/
+@media only screen and (max-width: 850px) {
+
+    .hbp2date{
+        display: block !important;
+        
+    }
+
+    .hbp2date2{
+        display: none !important;
+        
+    }
+
+    .hbimgw{
+        // border: 1px solid yellow;
+        display: block !important;
+    }   
+
+    .hbimg{
+      width: 100% !important;
+
+      .hb2blogimg1{
+        display: none !important;
+       
+    }
+
+      img{
+          width: 100% !important;
+      }
+    }
+
+    .hb2blogimg2{
+        display: block !important;
+        
+        
+    }
+   
+        
+
+    .hbwords{
+        width: 100% !important;
+    }
+
+    .hbwwidth{  
+        margin: 10px 0 0 0px !important;
+        p{
+          
+       }
+    }
+
+
+        
+}
+
+
+/* Medium devices (landscape tablets, 450px and down) ************************************/
+@media only screen and (max-width: 450px) {
+    .hblog{
+      
+        margin-bottom: 130px !important;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 300px and down) ************************************/
+@media only screen and (max-width: 300px) {
+
+    
+    .hbcomlikes{
+        
+           margin-left: 10px !important;
+
+           .hbcomments{
+             
+               margin-right:10px !important;
+
+           }
+        }
+
+
+        
+}
