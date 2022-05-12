@@ -92,8 +92,8 @@ function Head() {
                       
 
                         {/* Phone nav */}
-                        { getNav && 
-                        <div className='overlay'>
+                        
+                        <div className={getNav ?'overlay full' : 'overlay'}>
                             {/* background image */}
 
                             {/* login and signup container */}
@@ -117,7 +117,7 @@ function Head() {
                                 <img src={cancel} alt=''></img>
                             </div>
                            
-                        </div>}
+                        </div>
                         
                        
                     </div>

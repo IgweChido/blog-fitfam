@@ -167,11 +167,11 @@ $secondmaincolor:#3B3436;
 
             .overlay {
                 height: 100%;
-                width: 100%;
+                width: 0%;
                 position: fixed;
                 z-index: 3;
                 top: 0;
-                left: 0;
+                right: 0;
                background-image: url('../images/overlay.png');
                background-repeat: no-repeat;
                background-size: 100vw 100vh;
@@ -189,6 +189,11 @@ $secondmaincolor:#3B3436;
                         transition: 0.3s;
                         font-weight: 600;
                     }
+              }
+
+              .overlay.full{
+                  width: 100%;
+
               }
         
               .phoneNav {
