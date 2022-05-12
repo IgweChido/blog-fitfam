@@ -1,0 +1,325 @@
+$headFontSize: 16px;
+$headFontWeight: 600;
+$maincolor:#201C1D;
+$secondmaincolor:#3B3436;
+
+
+
+
+.headcontainer{
+    height: 100px;
+    // border: 1px solid black;
+    
+    z-index: 4;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0; 
+    // background-color: white;
+
+    
+   
+}
+
+.headcontainer.active{
+    background-color: white;
+    box-shadow: 0 0 7px 0 #ced3da;
+}
+.marginp{
+    width: 90%;
+    display: block;
+    margin: auto;
+    max-width: 1200px;
+    
+    // border: 1px solid blue;
+}
+
+.marginpp{
+    width: 90%;
+    display: block;
+    margin: auto;
+    position: relative;
+    // border: 1px solid red;
+}
+
+
+.hcont{
+    // border: 1px solid yellow;
+    display: flex;
+    margin-top: 12px;
+}
+
+.hleft{
+
+    // border: 1px solid red;
+    width: 50%;
+    display: flex;
+
+    .logodiv{
+        cursor: pointer;
+        // top: 17px;
+        // border: 1px solid blue;
+        // position:absolute;
+       
+
+    }
+
+    .headnav{
+        // border: 1px solid green;
+        padding-top: 25px;
+        width: 80%;
+
+        a{
+            margin:0 5.45% 0;
+            color: $maincolor;
+            text-decoration: none;
+    }
+    }
+
+}
+
+
+.hright{
+    // border: 1px solid green;
+    width: 50%;
+    
+
+    .logindiv{
+        position: relative;
+        top:11px;
+        float: right;
+        // border: 1px solid red;
+    
+        p{
+            display: inline-block;
+            cursor: pointer;
+        }
+    
+        .btnhead{
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 20px;
+            border: none;
+            border: 1px solid $maincolor;
+            height: 50px;
+            width: 150px;
+            border-radius: 5px;
+            // background-color: white;
+    
+        p{
+            margin: 11px auto 0;
+            display: block ;
+            // border: 1px solid yellow;
+            width: fit-content;
+            
+        }
+    }
+    }
+
+
+    .phonenavigation{
+        display: none;
+    }
+}
+
+
+.phonebacknav{
+   display: none;
+  
+   
+}
+
+
+
+
+
+
+
+/* Medium devices (landscape tablets, 850px and down) ************************************/
+@media only screen and (max-width: 850px) {
+
+    .headnav{
+        display: none;
+    }
+    .phonenavigation{
+        display:block !important;
+        // border: 1px solid blue;
+        position: relative;
+
+       
+        
+
+            .Hamburger{
+                // border: 1px solid rgb(0, 217, 255) !important ;
+                display: block !important;
+                z-index: 1;
+                right:0;
+                top:25px;
+                
+                position: absolute;
+                
+
+                img{
+                    width: 100%;
+                }
+            }
+        
+
+            .overlay {
+                height: 100%;
+                width: 100%;
+                position: fixed;
+                z-index: 3;
+                top: 0;
+                left: 0;
+               background-image: url('../images/overlay.png');
+               background-repeat: no-repeat;
+               background-size: 100vw 100vh;
+
+                overflow-x: hidden;
+                transition: 0.5s;
+        
+                    a {
+                        // border: 1px solid red;
+                        padding: 15px 8px;
+                        text-decoration: none;
+                        font-size: 24px;
+                        color: white;
+                        display: block;
+                        transition: 0.3s;
+                        font-weight: 600;
+                    }
+              }
+        
+              .phoneNav {
+                // border: 1px solid blue;
+                position: relative;
+                top: 20%;
+                width: 100%;
+                text-align: center;
+                margin-top: 30px;
+              
+              }
+
+              .logindiv2{
+                position: relative;
+                width: fit-content;
+                display: block;
+                margin: 15px auto 0;
+                // border: 1px solid red;
+            
+                p{
+                    display: inline-block;
+                    cursor: pointer;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                }
+            
+                .btnhead2{
+                    cursor: pointer;
+                    display: inline-block;
+                    margin-left: 20px;
+                    border: none;
+                    border: 1px solid $maincolor;
+                    padding: 16px 10px;
+                    border-radius: 5px;
+                    background-color: white;
+            
+                p{
+                    
+                    display: block ;
+                    color: $secondmaincolor;
+                    // border: 1px solid yellow;
+                    width: fit-content;
+                    font-weight: 600;
+                    font-size: 16px;
+                    
+                }
+            }
+            }
+              
+         .cancelbtn{
+            //  border: 1px solid green;
+             position: absolute;
+             bottom: 1%;
+             left: 50%;
+            margin-left: -27px;
+             width: fit-content;
+         }
+    }
+     
+    .logindiv{
+        display: none;
+    }
+
+
+    .phonebacknav{
+        position: absolute;
+        display: block !important;
+        // border: 1px solid red !important ;
+        right: 0;
+        height:70%;
+        width: 15%;
+        top: 15px;
+        background-color: $secondmaincolor;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      
+       
+    }
+
+
+    
+    
+}
+
+/* Medium devices (landscape tablets, 600px and down) ************************************/
+@media only screen and (max-width: 600px) {
+
+    .phonebacknav{
+        width: 17.5%;
+    }
+}
+
+
+
+/* Medium devices (landscape tablets, 460px and down) ************************************/
+@media only screen and (max-width: 460px) {
+
+    .headcontainer{
+        height: 70px !important;
+    }
+
+    .hcont{
+        margin-top: 5px !important;
+    }
+
+    .logodiv{
+      
+        width: 52px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .Hamburger{
+        top:17px !important;
+    }
+
+    .phonebacknav{
+        width:90px;
+        height: 47px;
+       top: 10px !important;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 300px and down) ************************************/
+@media only screen and (max-width: 300px) {
+
+    .phonebacknav{
+        width: 75px;
+    }
+}
+

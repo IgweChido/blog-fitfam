@@ -8,7 +8,7 @@ $siteFont: 18px;
     display: flex;
     // border:1px solid green;
     
-    margin: auto;
+    margin: 100px auto 0;
     
     
 }
@@ -223,14 +223,14 @@ $siteFont: 18px;
 @media only screen and (max-width: 850px) {
 
     .flexhero{
-        display: block;
+        display: block !important;
        
     }
 
     .leftside{
         
         width: auto;
-        margin: 80px 0 40px !important;
+        margin: 130px 0 40px !important;
         padding-left: 0px !important;
 
         .headerp{
@@ -371,7 +371,10 @@ $siteFont: 18px;
 /* Medium devices (landscape tablets, 480px and down) ************************************/
 @media only screen and (max-width: 480px) {
 
-
+    .flexhero{
+      margin: 70px auto 0 !important;
+       
+    }
 
     .herobtn{
     

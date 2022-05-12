@@ -1,6 +1,78 @@
 @import '../page2/Blogcomp1.scss';
 @import '../page2/Blog.scss';
 
+.bdtable{
+    // border:1px solid grey ;
+    display: flex;
+}
+
+.bdcol1{
+    // border: 1px solid red;
+    width: 100%;
+}
+
+.bdcol2{
+    width: 40%;
+    // border: 1px solid blue;
+    position: relative;
+   
+
+    .bdcol22{
+        margin-top: 100px;
+        padding: 0px 0 100px;
+        border: 1px solid black;
+        border-radius: 5px;
+    
+        width:30%;
+        position: fixed;
+        overflow-y: scroll;
+        right: 0;
+        height: 100vh;
+        background-color: white;
+    
+    
+        .bdcolmain{
+            // border: 1px solid yellow;
+            border-radius: 5px;
+            
+            background-color: white;
+            // position: relative;
+            padding: 0 40px;
+    
+            .ciconimg{
+                cursor: pointer;
+                position: fixed;
+                right: 30%;
+                margin-right:-16.5px;
+                top: 125px;
+                border: 1px solid black;
+                border-radius: 100%;
+                width: 32px;
+                height: 32px;
+                background-color: white;
+    
+                img{
+                    display: block;
+                    margin: 8px auto 0;
+    
+                }
+            }
+        }
+    
+    
+        
+        
+    }
+}
+
+
+
+
+
+
+
+
+
 
 .margindp{
     width: 70%;
@@ -11,7 +83,7 @@
 }
 .bddntitle{
     // border: 1px solid green;
-    margin: 80px 0 40px;
+    margin: 180px 0 40px;
 
     p{
         //  border:1px solid red;
@@ -78,7 +150,7 @@
 .margindp2{
     width: 80%;
     display: block;
-    margin: 0 auto 80px;
+    margin: 0 auto 150px;
     max-width: 1400px;
     // border: 1px solid blue;
 }
@@ -207,7 +279,7 @@
 
     .bddntitle{
         // border: 1px solid green;
-        margin: 80px 0 40px;
+        margin: 130px 0 40px;
     
         p{
            

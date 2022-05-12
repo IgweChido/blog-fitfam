@@ -1,196 +1,560 @@
 @import "./HomeSec2.scss";
 
 .Hs3main{
-    border:1px solid green;
-    display: flex;
-    height: 600px;
-    position: relative;
-    width:100%;
-   
-    
-   
-    margin: auto;
-
+//    border: 1px solid rosybrown;
+   display: flex;
+   padding: 80px 0;
     .Hs3imgdiv{
-        border:1px solid blue;
-        height: 420px;
+        // border: 1px solid red;
+        width: 70%;
         position: relative;
-        top:50%;
-        margin-top:-210px;
-        width:985px;
-       
-        
-        
+
+        .Hs3firstimg{
+            // border: 1px solid green;
+            width: fit-content;
+            position: relative;
+            height: 260px;
 
             .Hs3img1{
-                border:1px solid red;
+                display: inline-block;
+                width: 330px;
+                // border: 1px solid rgb(255, 251, 2);
                 position: absolute;
-                width: 26.8%;
-                height: 45.1%;
-                left:2.5%;
-                background-image: url('../images/Sec3img1.png');
-                border-radius: 5px;
-                background-position:  center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                
-               
-           
+                left: 30px;
+
+                img{
+                    width: 100%;
+                }
             }
+
             .Hs3img2{
-                
-                border:1px solid red;
+                display: inline-block;
+                width: 258px;
+                // border: 1px solid rgb(255, 0, 221);
                 position: absolute;
-                width: 20.95%;
-                height: 45.1%;
-                top:7.62%;
-                left:30.9%;
-                background-image: url('../images/Sec3img2.png');
-                border-radius: 5px;
-                background-position:  center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                
-                
-               
-            
-            }
-        
+                top: 20px;
+                left:380px;
 
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .Hs3secondimg{
+            // border: 1px solid green;
+            width: fit-content;
+            position: relative;
+          
+            height: 250px;
+            
             .Hs3img3{
-                border:1px solid red;
+                display: inline-block;
+                width: 360px;
+                // border: 1px solid rgb(255, 0, 221);
                 position: absolute;
-                width: 29.2%;
-                height: 30%;
-                top:49.9%;
-                background-image: url('../images/Sec3img3.png');
-                border-radius: 5px;
-                background-position:  center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                
-               
-                
 
-                 
-            } 
-            
-            .Hs3img4{
-                border:1px solid red;
-                position: absolute;
-                width: 29.8%;
-                height: 42.5%;
-                top:56.9%;
-                left:30.9%;
-                background-image: url('../images/Sec3img4.png');
-                border-radius: 5px;
-                background-position:  center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                
-                
-                
-                
-               
+                img{
+                    width: 100%;
+                }
             }
 
-        
-        
+            .Hs3img4{
+                display: inline-block;
+                width: 367px;
+                // border: 1px solid rgb(255, 251, 2); 
+                position: absolute;
+                left: 380px;
+                top:20px;
+
+                
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
        
-        
+       
     }
 
     .Hs3wordiv{
 
-        border:1px solid yellow;
-        position:absolute;
-        height: fit-content;
-        left: 71%;
-        
-        top:50%;
-        margin-top:-36px;
-        
-        
+        // border:1px solid yellow;
+        width: 30%;
 
-        .Hs3bigp{
+        .Hs3wwdiv{
+
+            // border: 1px solid black;
+            width: 90%;
+            margin: 200px 0 0 0;
+
+            .Hs3bigp{
             color: $maincolor;
             font-size: 29px;
             font-weight: 700;
             // border: 1px solid green;
             margin: 0 0 20px 0;
-            width: fit-content;
+          
         }
 
         p{
             font-size: $siteFont;
             color: $smallwordcolor;
             //  border: 1px solid blue;
-             width:280px;
+           
              
         }
+
+        }
+       
+       
+        
+
+       
        
     }
 }
 
+/* Medium devices (landscape tablets, 1220px and down) ************************************/
+@media only screen and (max-width: 1220px) {
 
+    .Hs3firstimg{
+        height: 210px !important;
 
+        .Hs3img1{
+           
+            left: 20px !important;
+            width: 264px !important ;
 
-/* Medium devices (landscape tablets, 1100px and down) ************************************/
-@media only screen and (max-width: 1100px) {
+            img{
+                
+            }
+        }
 
-    .Hs3main{
-        width: auto!important;
+        .Hs3img2{
+           
+            left:304px !important;
+            width: 206.4px !important;
+
+            img{
+                
+            }
+        }
     }
 
-    .Hs3wordiv{
-
+    .Hs3secondimg{
+        height: 210px !important;
         
-       margin-left: -50px;
-        
-    }
-    
-    
-}
+        .Hs3img3{
+           width: 288px !important;
+        }
 
-
-/* Medium devices (landscape tablets, 1100px and down) ************************************/
-@media only screen and (max-width: 1100px) {
-    .Hs3wordiv{
-
-        
-        margin-left: -60px;
-         
-     }
-}
-
-
-/* Medium devices (landscape tablets, 850px and down) ************************************/
-@media only screen and (max-width: 850px) {
-    .Hs3main{
-        display: block !important;
+        .Hs3img4{
+           
+            left: 308px !important;
+            width: 293.6px !important;
+           
+        }
     }
 
-    .Hs3imgdiv{
-        top:auto !important;
-        margin: auto !important;
-        width: auto !important;
-    }
 
-    .Hs3wordiv{
-        top:auto !important;
-        margin: auto !important;
-        width: auto !important;
-        left: auto !important;
-        position: relative !important;
-    }
+    .Hs3wwdiv{
 
-    .Hs3bigp{
-        
+        margin: 150px 0 0 0 !important;
+
+        .Hs3bigp{
+      
+      
     }
 
     p{
        
-         width:100% !important;
          
     }
+
+    }
+   
+
+   
 }
+
+
+/* Medium devices (landscape tablets, 980px and down) ************************************/
+@media only screen and (max-width: 980px) {
+
+    .Hs3firstimg{
+        height: 170px !important;
+
+        .Hs3img1{
+           
+            left: 20px !important;
+            width: 211.2px !important ;
+
+            img{
+                
+            }
+        }
+
+        .Hs3img2{
+           
+            left:251px !important;
+            width: 165.12px !important;
+
+            img{
+                
+            }
+        }
+    }
+
+    .Hs3secondimg{
+        height: 170px !important;
+        
+        .Hs3img3{
+           width: 230.4px !important;
+        }
+
+        .Hs3img4{
+           
+            left: 251px !important;
+            width: 234.88px !important;
+           
+        }
+    }
+
+    .Hs3wwdiv{
+
+        margin: 100px 0 0 0 !important;
+        width: 100% !important;
+
+        .Hs3bigp{
+      
+      
+        }
+
+         p{
+       
+         
+        }
+
+    }
+   
+
+   
+}
+
+/* Medium devices (landscape tablets, 850px and down) ************************************/
+@media only screen and (max-width: 850px) {
+
+    .Hs3main{
+        display: block !important;
+
+        .Hs3imgdiv{
+            display: block !important;
+            margin: auto !important;
+            width: 480px;
+
+            .Hs3firstimg{
+                height: 160px !important;
+        
+                .Hs3img1{
+                   
+                    left: 20px !important;
+                    width: 211.2px !important ;
+        
+                    img{
+                        
+                    }
+                }
+        
+                .Hs3img2{
+                   
+                    left:241px !important;
+                    width: 165.12px !important;
+        
+                    img{
+                        
+                    }
+                }
+            }
+        
+            .Hs3secondimg{
+                height: 170px !important;
+                
+                .Hs3img3{
+                   width: 230.4px !important;
+                }
+        
+                .Hs3img4{
+                   
+                    left: 241px !important;
+                    width: 234.88px !important;
+                   
+                }
+            }
+        
+        }
+
+
+       .Hs3wordiv{
+        width: 100% !important;
+        .Hs3wwdiv{
+
+            margin: 40px 0 0 0 !important;
+           
+    
+            .Hs3bigp{
+          
+          
+        }
+    
+        p{
+           
+             
+        }
+    
+        }
+       }
+
+    }
+}
+
+
+/* Medium devices (landscape tablets, 540px and down) ************************************/
+@media only screen and (max-width: 540px) {
+
+    .Hs3main{
+        display: block !important;
+
+        .Hs3imgdiv{
+            display: block !important;
+            margin: auto !important;
+            width: 340px;
+
+            .Hs3firstimg{
+                height: 115px !important;
+        
+                .Hs3img1{
+                   
+                    left: 15px !important;
+                    width: 147.84px !important ;
+        
+                    img{
+                        
+                    }
+                }
+        
+                .Hs3img2{
+                   
+                    left:171px !important;
+                    width: 115.58px !important;
+        
+                    img{
+                        
+                    }
+                }
+            }
+        
+            .Hs3secondimg{
+                height: 130px !important;
+                
+                .Hs3img3{
+                   width: 161.28px !important;
+                }
+        
+                .Hs3img4{
+                   
+                    left: 171px !important;
+                    width: 164.42px !important;
+                   
+                }
+            }
+        
+        }
+
+
+       .Hs3wordiv{
+        width: 100% !important;
+        .Hs3wwdiv{
+
+            margin: 40px 0 0 0 !important;
+           
+    
+            .Hs3bigp{
+                
+                font-size: 24px !important;
+          
+        }
+    
+        p{
+            font-size: 16px !important;
+           
+             
+        }
+    
+        }
+       }
+
+    }
+}
+
+
+/* Medium devices (landscape tablets, 380px and down) ************************************/
+@media only screen and (max-width: 380px) {
+
+    .Hs3main{
+        display: block !important;
+
+        .Hs3imgdiv{
+            display: block !important;
+            margin: auto !important;
+            width: 275px;
+
+            .Hs3firstimg{
+                height: 95px !important;
+        
+                .Hs3img1{
+                   
+                    left: 15px !important;
+                    width: 118.27px !important ;
+        
+                    img{
+                        
+                    }
+                }
+        
+                .Hs3img2{
+                   
+                    left:139px !important;
+                    width: 92.46px !important;
+        
+                    img{
+                        
+                    }
+                }
+            }
+        
+            .Hs3secondimg{
+                height: 105px !important;
+                
+                .Hs3img3{
+                   width: 129.02px !important;
+                }
+        
+                .Hs3img4{
+                   
+                    left: 139px !important;
+                    width: 131.54px !important;
+                   
+                }
+            }
+        
+        }
+
+
+       .Hs3wordiv{
+        width: 100% !important;
+        .Hs3wwdiv{
+
+            margin: 40px 0 0 0 !important;
+           
+    
+            .Hs3bigp{
+          
+          
+        }
+    
+        p{
+           
+             
+        }
+    
+        }
+       }
+
+    }
+}
+/* Medium devices (landscape tablets, 380px and down) ************************************/
+@media only screen and (max-width: 310px) {
+
+    .Hs3main{
+        display: block !important;
+
+        .Hs3imgdiv{
+            display: block !important;
+            margin: auto !important;
+            width: 250px;
+
+            .Hs3firstimg{
+                height: 85px !important;
+        
+                .Hs3img1{
+                   
+                    left: 10px !important;
+                    width: 106.44px !important ;
+        
+                    img{
+                        
+                    }
+                }
+        
+                .Hs3img2{
+                   
+                    left:126px !important;
+                    width: 83.21px !important;
+        
+                    img{
+                        
+                    }
+                }
+            }
+        
+            .Hs3secondimg{
+                height: 100px !important;
+                
+                .Hs3img3{
+                   width: 116.18px !important;
+                }
+        
+                .Hs3img4{
+                   
+                    left: 126px !important;
+                    width: 118.39px !important;
+                   
+                }
+            }
+        
+        }
+
+
+       .Hs3wordiv{
+        width: 100% !important;
+        .Hs3wwdiv{
+
+            margin: 40px 0 0 0 !important;
+           
+    
+            .Hs3bigp{
+          
+          
+        }
+    
+        p{
+           
+             
+        }
+    
+        }
+       }
+
+    }
+}
+
+
+
+
+
+
+
+
+

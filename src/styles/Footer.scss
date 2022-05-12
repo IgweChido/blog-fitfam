@@ -1,9 +1,12 @@
 @import "./Header.scss";
 $phonefontsize:16px;
 .footer{
+    width: 100%;
     background-color: $maincolor;
     height: 60px;
     color: white;
+    // border: 1px solid yellow;
+    
 }
 
 .footmain{

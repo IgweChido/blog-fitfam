@@ -1,0 +1,37 @@
+@import './BlogDetails.scss';
+
+.uwcmaincom{
+    // border: 1px solid green;
+    display: flex;
+    margin: 0 0 30px;
+    height: 52px;
+    position: relative;
+
+    .uwcol1{
+        // border: 1px solid blue;
+        margin-right: 15px;
+        width: 52px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    form{
+        // border: 1px solid red;
+        width: 80%;
+
+
+        input[type=text]{
+            font-family: $myFont;
+            font-size: 16px;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid grey;
+            padding: 10px;
+            margin: 8px 0 0;
+        }
+        
+    }
+
+}

@@ -1,0 +1,39 @@
+@import './BlogDetails.scss';
+
+
+.usermaincom{
+    // border: 1px solid green;
+    display: flex;
+    margin-bottom: 30px;
+
+
+    .uccol1{
+        // border: 1px solid blue;
+        margin-right: 15px;
+        width: 52px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .uccol2{
+        // border: 1px solid red;
+        color: $smallwordcolor;
+
+        .ucname{
+            color: black;
+            font-weight: 600;
+            font-size: $siteFont;
+            margin-bottom: 5px;
+        }
+
+        .ucncom{
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .ucdate{
+            font-size: 13px;
+        }
+    }
+}

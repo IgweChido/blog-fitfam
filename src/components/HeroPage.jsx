@@ -1,4 +1,4 @@
-import React, {  useEffect, useState } from 'react'
+import React, {  useEffect,useRef, useState } from 'react'
 import '../styles/HeroPage.scss'
 import Hero1 from '../images/Heroimage1.png'
 import Hero2 from '../images/Heroimage2.png'
@@ -92,7 +92,7 @@ function HeroPage() {
        <HomeSec2/>
 
        {/* section 3 */}
-       {/* <HomeSec3/> */}
+       <HomeSec3/>
 
        {/* section 4 */}
        <HomeSec4/>

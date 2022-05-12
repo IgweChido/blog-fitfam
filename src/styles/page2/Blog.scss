@@ -3,7 +3,7 @@
 
 .hblog{
     // border: 1px solid green;
-    margin-bottom: 160px;
+    margin: 100px 0 150px;
 
 
     .hbword{
@@ -131,6 +131,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 120px;
     
    
    
@@ -209,6 +210,10 @@
 /* Medium devices (landscape tablets, 850px and down) ************************************/
 @media only screen and (max-width: 850px) {
 
+    .hblog{
+       
+        margin: 50px 0 150px !important;
+    }
     .hbp2date{
         display: block !important;
         

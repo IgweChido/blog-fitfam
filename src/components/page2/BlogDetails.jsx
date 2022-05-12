@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../../styles/page2/BlogDetails.scss'
 import facebook from '../../images/facebookd.png'
 import twitter from '../../images/twitterd.png'
@@ -6,12 +7,27 @@ import instagram from '../../images/instagramd.png'
 import like from '../../images/likes.png'
 import like1 from '../../images/likes1.png'
 import comment from '../../images/comments.png'
+import commentb from '../../images/commentsb.png'
 import back from '../../images/back.png'
 import Blogwords from './Blogwords'
+import CommentSec from './CommentSec'
+import cancelcom from '../../images/cancelcom.png'
 
 function BlogDetails() {
 
     const [state, setstate] = useState(false);
+    const [cancelState, cancelSetstate] = useState(false);
+
+    const removeCom =()=>{
+        cancelSetstate(false)
+
+      
+    }
+
+    const showCom =()=>{
+        cancelSetstate(true)
+        
+    }
 
     const changelikebtn =()=>{
             setstate(true);
@@ -22,7 +38,10 @@ function BlogDetails() {
 }
 
   return (
-    <div>
+    <div className='bdtable'>
+
+        {/* col 1 */}
+         <div className='bdcol1'>
         {/* marginp */}
         <div className='margindp'> 
             {/* date/name and title */}
@@ -70,8 +89,9 @@ function BlogDetails() {
                         {/* comments & likes */}
                         <div className='bdcomlikes'>
                             {/* comments */}
-                            <div className='bdcom'>
-                                <img src={comment} alt=''></img>
+                            <div className='bdcom' onClick={showCom} >
+                                { cancelState ? <img src={commentb} alt=''></img> 
+                                : <img src={comment} alt=''></img>}
                                 <p>5</p>
                             </div>
                             {/* likes */}
@@ -99,16 +119,39 @@ function BlogDetails() {
                  </div>
 
                   {/* go back arrow */}
-                  <div className='backtoblog'>
+                  <Link to='/blog'className='backtoblog'>
                         <img src={back} alt=''></img>
                         <p>Back to blog</p>
-                    </div>
+                    </Link>
             </div>
             
             
 
 
         </div>
+
+
+        {/* col2 */}
+        {cancelState && 
+           <div className='bdcol2'>
+                <div className='bdcol22'>
+                    <div className='bdcolmain'>
+                        {/* cancel icon */}
+                    <div className='ciconimg' onClick={removeCom}>
+                        <img src={cancelcom}></img>
+
+                    </div>
+
+                <CommentSec/> 
+                    </div>
+                                    
+            </div>
+
+           </div>
+           }
+        
+    </div>
+   
 
     
   )
