@@ -3,17 +3,10 @@
 // Comment Section Area ***********************************************
 .csbwicon{
     //  border: 1px solid green;
+     min-height: 100vh;
 
 
-    .ciconimg{
-        position: absolute;
-        left: -16px;
-        top: 25px;
-        // border: 1px solid green;
-        border-radius: 100%;
-        width: 32px;
-        height: 32px;
-    }
+  
 
 
     .csmain{
@@ -39,6 +32,11 @@
 
         }
     }
+}
+
+
+@media only screen and (max-width:360px) {
+    
 }
 
 

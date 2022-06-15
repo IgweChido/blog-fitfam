@@ -14,6 +14,10 @@ const Images = {
     Hero13: require('../images/Heroimage13.png'),
     Hero14: require('../images/Heroimage14.png'),
     Hero15: require('../images/Heroimage15.png'),
+    blogimg2 : require('../images/bloghimg2.png'),
+    blogcomp1 : require('../images/blogcomp1.png'),
+    blogcomp2 : require('../images/blogcomp2.png'),
+
 }
 
 export default Images;

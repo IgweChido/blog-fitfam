@@ -7,7 +7,7 @@ import img4 from '../images/Sec3img4.png'
 
 function HomeSec3() {
   return (
-    <div >
+    <div id='about'>
         {/* marginp */}
         <div className='marginp'>
             {/* main */}

@@ -1,9 +1,11 @@
 import React from 'react'
 import '../../styles/page2/CommentSec.scss'
+import ErrorBoundary from '../ErrorBoundary'
 import UserComments from './UserComments'
 import UserwriteCom from './UserwriteCom'
 
 function CommentSec() {
+
   return (
     // {/* border with cancel icon */}
     <div className='csbwicon'>
@@ -17,11 +19,11 @@ function CommentSec() {
             
             {/* user comments */}
             <div className='csucomments'>
-
-                <UserComments/>
-                <UserComments/>
-                <UserComments/>
-                <UserComments/>
+                <ErrorBoundary>
+                  <UserComments/>
+                </ErrorBoundary>
+                
+                
 
             </div>
 

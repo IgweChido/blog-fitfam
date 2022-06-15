@@ -1,8 +1,13 @@
 import React from 'react'
 import '../styles/HomeSec5.scss'
-import thick from '../images/thicked.png'
+import thick from '../images/thicked1.svg'
+import { useDispatch, useSelector } from 'react-redux';
+import { isShowing } from './Reducers/ShowLogin'
 
 function HomeSec5() {
+
+    const {showLog} = useSelector((state)=>state.showLogin)
+    const dispatch = useDispatch()
   return (
     <div>
         {/* marginp */}
@@ -43,7 +48,9 @@ function HomeSec5() {
                 </div>
 
                 {/* button */}
-                <div className='Hs5btn'>
+                <div className='Hs5btn'onClick={()=>{
+                        dispatch(isShowing())
+                    }}>
                     <p>Join Us</p>
                             
                 </div>

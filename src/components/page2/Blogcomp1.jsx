@@ -1,15 +1,22 @@
 import React from 'react'
 import '../../styles/page2/Blogcomp1.scss'
-import like from '../../images/likes.png'
-import comment from '../../images/comments.png'
-import blogcomp from '../../images/blogcomp1.png'
+import like from '../../images/likes11.svg'
+import comment from '../../images/comments1.svg'
+import { useDispatch, useSelector } from 'react-redux';
 
-function Blogcomp1() {
+
+function Blogcomp1(props) {
+
+    const {userLikes} = useSelector((state)=>state.userLike)
+    const {userComs} = useSelector((state)=>state.userComm)
+
+    const dispatch = useDispatch()
+
   return (
-    <div className='blogcomp1'>
+    <div >
         {/* image div */}
         <div className='bc1img'>
-            <img src={blogcomp} alt=''></img>
+            <img src={props.image} alt=''></img>
         </div>
         {/* words */}
         <div className='bc1words'>
@@ -28,12 +35,12 @@ function Blogcomp1() {
                     {/* comments */}
                     <div className='bc1com'>
                         <img src={comment} alt=''></img>
-                        <p>5</p>
+                        <p>{userComs}</p>
                     </div>
                     {/* likes */}
                     <div className='bc1likes'>
                         <img src={like} alt=''></img>
-                        <p>1000</p>
+                        <p>{userLikes}</p>
                     </div>
                 </div>
 

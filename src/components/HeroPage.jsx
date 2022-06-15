@@ -1,14 +1,19 @@
-import React, {  useEffect,useRef, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import '../styles/HeroPage.scss'
 import Images from './Images'
 import pbox from '../images/picturebox.png'
-import heart from '../images/Heart.png'
+import heart from '../images/Heart1.svg'
 import HomeSec2 from './HomeSec2'
 import HomeSec3 from './HomeSec3'
 import HomeSec4 from './HomeSec4'
 import HomeSec5 from './HomeSec5'
+import { useDispatch, useSelector } from 'react-redux';
+import { isShowing } from './Reducers/ShowLogin'
 
 function HeroPage() {
+    const {showLog} = useSelector((state)=>state.showLogin)
+    const dispatch = useDispatch()
+
     const [state, setState] = useState(0);
     const [changeFrame , setChangeFrame] = useState(0)
     const arr = [Images.Hero1,Images.Hero2,Images.Hero3,
@@ -52,7 +57,9 @@ function HeroPage() {
                     <p className='smallp'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius at quis nisl eu dapibus odio. </p>
                     
                     {/* button */}
-                    <div className='herobtn'>
+                    <div className='herobtn' onClick={()=>{
+                        dispatch(isShowing())
+                    }}>
                         <p>Join Us</p>
                         
                     </div>

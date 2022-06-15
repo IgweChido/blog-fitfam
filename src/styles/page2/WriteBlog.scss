@@ -12,6 +12,22 @@
         margin-bottom: 40px;
     }
 
+    .title-box{
+        // border: 1px solid red;
+        margin-bottom: 20px;
+
+        input[type=text]{
+            border: 5px solid $maincolor;
+            padding: 8px 30px;
+            height: 60px;
+            width: 85%;
+            border-radius: 5px;
+            font-family: $myFont;
+            font-size: $headFontSize;
+
+        }
+    }
+
     .wbwritebx{
         // border:1px solid red;
         textarea{
@@ -20,7 +36,7 @@
             border: 5px solid $maincolor;
             border-radius: 5px;
             height: 450px;
-            padding: 40px;
+            padding: 30px;
             font-family: $myFont;
             font-size: $headFontSize;
         }
@@ -59,6 +75,10 @@
         }
 
         
+    }
+
+    input[type=file]{
+        display: none;
     }
 
     .wbherobtn2{
@@ -125,8 +145,10 @@
     .wbcomparea{
         // border:1px solid red;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         flex-wrap: wrap;
+
+
         
     }
 }
@@ -141,6 +163,18 @@
             
             font-size: 24px !important;
             
+        }
+    }
+
+    .title-box{
+       
+
+        input[type=text]{
+            border: 2px solid $maincolor !important;
+           
+            width: 100% !important;
+            
+
         }
     }
     .wbwritebx{
@@ -207,6 +241,29 @@
         // border:1px solid red;
         font-size: 24px !important;
        
+    }
+}
+
+
+/* Medium devices (landscape tablets, 540px and down) ************************************/
+@media only screen and (max-width: 540px) {
+
+    .title-box{
+       
+
+        input[type=text]{
+            
+            padding: 8px 20px !important;
+
+        }
+    }
+    .wbwritebx{
+        // border:1px solid red;
+        textarea{
+            padding: 20px 20px !important;
+           
+            
+        }
     }
 }
 

@@ -54,11 +54,13 @@ $secondmaincolor:#3B3436;
     // border: 1px solid red;
     width: 50%;
     display: flex;
+    margin-top: 3px;
 
     .logodiv{
         cursor: pointer;
         // top: 17px;
         // border: 1px solid blue;
+      
         // position:absolute;
        
 
@@ -116,6 +118,44 @@ $secondmaincolor:#3B3436;
     }
     }
 
+    .user-current{
+        // border:1px solid blue;
+        position: relative;
+        top:15px;
+        float: right;
+        display: flex;
+
+        .user-circle{
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+           
+            margin-right: 12px;
+            position: relative;
+
+            p{
+                font-size: 24px;
+                color: white;
+                font-weight: 600;
+                // border: 1px solid yellow;
+                display: block;
+                margin:  0 auto;
+                width: fit-content;
+                top: 50%;
+                margin-top: -18px;
+                position: relative;
+            }
+
+        }
+
+        .user-name{
+            // border: 1px solid pink;
+            font-size: $headFontSize;
+            margin-top: 10px;
+            color: $maincolor;
+        }
+    }
+
 
     .phonenavigation{
         display: none;
@@ -166,10 +206,11 @@ $secondmaincolor:#3B3436;
         
 
             .overlay {
-                height: 100%;
+                // border: 1px solid green;
+                height: 100vh;
                 width: 0%;
                 position: fixed;
-                z-index: 3;
+                z-index:5;
                 top: 0;
                 right: 0;
                background-image: url('../images/overlay.png');
@@ -193,11 +234,12 @@ $secondmaincolor:#3B3436;
 
               .overlay.full{
                   width: 100%;
+                  z-index:5;
 
               }
         
               .phoneNav {
-                // border: 1px solid blue;
+                // border: 1px solid blue !important;
                 position: relative;
                 top: 20%;
                 width: 100%;
@@ -212,6 +254,7 @@ $secondmaincolor:#3B3436;
                 display: block;
                 margin: 15px auto 0;
                 // border: 1px solid red;
+                
             
                 p{
                     display: inline-block;
@@ -243,6 +286,50 @@ $secondmaincolor:#3B3436;
                 }
             }
             }
+            .user-current2{
+                // border:1px solid blue;
+                position: relative;
+                display: flex;
+                width: fit-content;
+                
+                margin: 15px auto 0;
+                // border: 1px solid red;
+        
+                .user-circle2{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    min-width: 40px;
+                    // background-color: purple;
+                    margin-right: 12px;
+                    position: relative;
+        
+                    p{
+                        font-size: 24px;
+                        color: white;
+                        font-weight: 600;
+                        // border: 1px solid yellow;
+                        display: block;
+                        margin: 0 auto ;
+                        top:50%;
+                        margin-top: -18px;
+                        position: relative;
+                        width: fit-content;
+                    }
+        
+                }
+        
+                .user-name2{
+                    // border: 1px solid pink;
+                    font-size: $headFontSize;
+                    margin-top: 10px;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                }
+            }
+        
+        
               
          .cancelbtn{
             //  border: 1px solid green;
@@ -257,6 +344,11 @@ $secondmaincolor:#3B3436;
     .logindiv{
         display: none;
     }
+    .user-current{
+        display: none !important;
+    }
+
+    
 
 
     .phonebacknav{
@@ -300,13 +392,19 @@ $secondmaincolor:#3B3436;
         margin-top: 5px !important;
     }
 
-    .logodiv{
+    .hleft{
+        margin-top: 3.5px !important;
+
+        .logodiv{
       
-        width: 52px;
-        img{
-            width: 100%;
+            width: 52px;
+            img{
+                width: 100%;
+            }
         }
     }
+
+    
 
     .Hamburger{
         top:17px !important;

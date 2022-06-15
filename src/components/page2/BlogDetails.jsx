@@ -1,43 +1,72 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../../styles/page2/BlogDetails.scss'
-import facebook from '../../images/facebookd.png'
-import twitter from '../../images/twitterd.png'
-import instagram from '../../images/instagramd.png'
-import like from '../../images/likes.png'
-import like1 from '../../images/likes1.png'
-import comment from '../../images/comments.png'
-import commentb from '../../images/commentsb.png'
-import back from '../../images/back.png'
+import facebook from '../../images/facebookd1.svg'
+import twitter from '../../images/twitterd1.svg'
+import instagram from '../../images/instagramd1.svg'
+import like from '../../images/likes11.svg'
+import like1 from '../../images/likes12.svg'
+import comment from '../../images/comments1.svg'
+import commentb from '../../images/commentsb1.svg'
+import back from '../../images/back1.svg'
 import Blogwords from './Blogwords'
 import CommentSec from './CommentSec'
-import cancelcom from '../../images/cancelcom.png'
+import cancelcom from '../../images/cancelcom1.svg'
+import { useDispatch, useSelector } from 'react-redux';
+import { isMinus, isPlus } from '../Reducers/NumberLikes'
+import trash from '../../images/trash.svg'
 
 function BlogDetails() {
 
     const [state, setstate] = useState(false);
     const [cancelState, cancelSetstate] = useState(false);
+    const [commentOver, SetCommentOver] = useState(false)
+    const {backImg} = useSelector((state)=>state.backimages)
+    const {userLikes} = useSelector((state)=>state.userLike)
+    const {userComs} = useSelector((state)=>state.userComm)
+
+    const dispatch = useDispatch()
 
     const removeCom =()=>{
         cancelSetstate(false)
+        SetCommentOver(false)
 
       
     }
 
+   
+
     const showCom =()=>{
         cancelSetstate(true)
+        SetCommentOver(true)
         
     }
 
     const changelikebtn =()=>{
             setstate(true);
+            dispatch(isPlus())
+         
     }
 
     const changelikebtn2 =()=>{
         setstate(false);
+        dispatch(isMinus())
+        
 }
 
+
+
+// background image
+const backgrounImg={
+    backgroundImage:`url(${backImg})`
+}
+
+const moveToTop=()=>{
+    window.scrollTo({top: 0, behavior:'smooth'})
+   
+}
   return (
+    
     <div className='bdtable'>
 
         {/* col 1 */}
@@ -55,7 +84,7 @@ function BlogDetails() {
             {/* blog image */}
             <div className='bdimage'>
                 {/* background image */}
-                <div className='bdbackimg'>
+                <div className='bdbackimg' style={backgrounImg}>
 
                 </div>
                 {/* border around image */}
@@ -92,7 +121,7 @@ function BlogDetails() {
                             <div className='bdcom' onClick={showCom} >
                                 { cancelState ? <img src={commentb} alt=''></img> 
                                 : <img src={comment} alt=''></img>}
-                                <p>5</p>
+                                <p>{userComs}</p>
                             </div>
                             {/* likes */}
                             <div className='bdlikes'>
@@ -103,7 +132,7 @@ function BlogDetails() {
                                
                                 
                                 
-                                <p>1000</p>
+                                <p>{userLikes}</p>
                             </div>
                         </div>
                     </div>
@@ -118,8 +147,15 @@ function BlogDetails() {
 
                  </div>
 
+                 {/* Delete Blog button */}
+                 <div className='delete-blog'>
+                      <div className='delete-blog-img'>
+                          <img src={trash} alt=''></img>
+                      </div>
+                  </div>
+
                   {/* go back arrow */}
-                  <Link to='/blog'className='backtoblog'>
+                  <Link to='/blog'className='backtoblog' onClick={moveToTop}>
                         <img src={back} alt=''></img>
                         <p>Back to blog</p>
                     </Link>
@@ -142,6 +178,8 @@ function BlogDetails() {
 
                     </div>
 
+                
+
                 <CommentSec/> 
                     </div>
                                     
@@ -149,6 +187,27 @@ function BlogDetails() {
 
            </div>
            }
+
+
+           {commentOver &&
+                //  col2 phone overlay
+                 <div className='bdcol2-1'>
+                      <div className='bdcol22-1'>
+                          <div className='bdcolmain-1'>
+                              {/* cancel icon */}
+                          <div className='ciconimg-1' onClick={removeCom}>
+                              <img src={cancelcom}></img>
+      
+                          </div>
+      
+                      <CommentSec/> 
+                          </div>
+                                          
+                  </div>
+      
+                 </div>
+           }
+          
         
     </div>
    

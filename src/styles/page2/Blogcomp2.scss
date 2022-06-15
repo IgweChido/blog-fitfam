@@ -1,17 +1,32 @@
 @import '../page2/Blogcomp1.scss';
 
+
+.check-div{
+    // border: 1px solid yellow;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
 .bc2backimg{
-    background-image: url('../../images/Heroimage10.png');
-    width: 29.5%;
+    // background-image: url('../../images/Heroimage13.png');
+//    width: 100%;
     border-radius: 5px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-bottom: 30px;
+  width: 29.5%;
     height: 440px;
+    margin: 0 1.9% 30px;
+    // border: 1px solid red;
+    text-decoration: none;
 
+::after{
+        text-decoration: none;
+    }
     .bc2dark{
+        width: 100%;
         position: absolute;
         bottom: 0;
         background: rgba(32, 28, 29, 0.5);
@@ -104,6 +119,7 @@
 @media only screen and (max-width: 950px) {
     .bc2backimg{
         width: 32.5% !important;
+        margin: 0 0.3% 30px !important;
     }
 }
 
@@ -112,6 +128,7 @@
 @media only screen and (max-width: 860px) {
     .bc2backimg{
         width: 46% !important;
+        margin: 0 2% 30px !important;
     }
 }
 

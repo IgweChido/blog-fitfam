@@ -23,20 +23,22 @@
     .hbimgw{
         // border: 1px solid yellow;
         display: flex;
+        text-decoration: none;
         
        
         .hbimg{
             // border: 1px solid red;
             width: 60%;
 
-             .hb2blogimg2{
-                display: none;
-                width: 100%;
-         }
+            
             
 
             img{
+                height: 450px;
+                object-fit: cover;
+                object-position: top;
                 width: 100%;
+                border-radius: 5px;
               
                 
             }
@@ -124,19 +126,32 @@
     }
 }
 
-
 .bodyblog{
+    margin-bottom: 120px; 
+    .bodyblog1{
+        
+        // border: 1px solid green;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        
+        
     
-    // border: 1px solid green;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 120px;
     
-   
-   
-    
+        .bodyblog2{
+        
+            // border: 1px solid green;
+            // display: flex;
+            // justify-content: flex-start;
+            // flex-wrap: wrap;
+           
+            
+        }
+
+
+    }
 }
+
 
 
 /* Medium devices (landscape tablets, 1100px and down) ************************************/
@@ -227,26 +242,26 @@
     .hbimgw{
         // border: 1px solid yellow;
         display: block !important;
+        
     }   
 
     .hbimg{
+        //  border: 1px solid blue;
       width: 100% !important;
+     
+    
 
-      .hb2blogimg1{
-        display: none !important;
-       
-    }
+     
 
       img{
+          height: 400px !important;
           width: 100% !important;
+         
+         
       }
     }
 
-    .hb2blogimg2{
-        display: block !important;
-        
-        
-    }
+   
    
         
 
@@ -272,6 +287,23 @@
       
         margin-bottom: 130px !important;
     }
+
+
+    .hbimg{
+        // border: 1px solid blue;
+     width: 100% !important;
+    
+   
+
+    
+
+     img{
+         height: 300px !important;
+         width: 100% !important;
+        
+        
+     }
+   }
     
 }
 

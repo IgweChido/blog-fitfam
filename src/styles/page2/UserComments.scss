@@ -11,7 +11,9 @@
         // border: 1px solid blue;
         margin-right: 15px;
         width: 52px;
+        min-width: 45px;
         img{
+            border-radius: 100%;
             width: 100%;
         }
     }

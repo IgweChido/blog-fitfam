@@ -10,11 +10,26 @@
     .uwcol1{
         // border: 1px solid blue;
         margin-right: 15px;
-        width: 52px;
+       
+            min-width: 45px;
 
-        img{
-            width: 100%;
-        }
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            position: relative;
+
+            p{
+                font-size: 24px;
+                color: white;
+                font-weight: 600;
+                // border: 1px solid yellow;
+                display: block;
+                margin: 0 auto ;
+                width: fit-content;
+                top: 50%;
+                margin-top: -18px;
+                position: relative;
+            }
     }
 
     form{
@@ -34,4 +49,13 @@
         
     }
 
+}
+
+
+@media only screen and (max-width:330px) {
+    .uwcol1{
+       
+        margin-right: 5px !important;
+       
+    }
 }
